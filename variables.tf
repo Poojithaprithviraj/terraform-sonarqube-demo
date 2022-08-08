@@ -13,7 +13,7 @@ variable "ec2_instance_tags" {
   type        = map(string)
   default = {
     "Name"        = "webapp"
-    "Environment" = "Dev"
+    "Environment" = "Prod"
     "Type"        = "Application"
   }
 }
