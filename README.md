@@ -1,1 +1,1 @@
-# terraform-sonarqube-demo
+# Terraform + SonarQube + GitHub + Jenkins Integration Demo
