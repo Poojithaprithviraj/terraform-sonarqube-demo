@@ -5,6 +5,7 @@ resource "aws_instance" "web" {
   availability_zone           = "us-east-1c"
   key_name                    = "awsdemokey"
   user_data                   = file("nginx-install.sh")
+  associate_public_ip_address = true
   vpc_security_group_ids      = [aws_security_group.allow_http_ssh.id]
   associate_public_ip_address = false
   tags = var.ec2_instance_tags
